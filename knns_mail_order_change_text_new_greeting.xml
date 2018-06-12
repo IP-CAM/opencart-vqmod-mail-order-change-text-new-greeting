@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification
+	xmlns="https://github.com/vqmod/vqmod"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://github.com/vqmod/vqmod https://raw.githubusercontent.com/vqmod/vqmod/master/vqmod.xsd">
+	>
+	<id><![CDATA[[VQMOD] Mail Order > Change text new greeting]]></id>
+	<version>0.1.0</version>
+	<vqmver>2.6.3</vqmver>
+	<author>kanenas.net (aka Nikolas Branis) - nbran@kanenas.net</author>
+	<file path="catalog/language/greek/mail/" name="order.php" error="log">
+		<operation error="skip">
+			<search position="replace"><![CDATA[$_['text_new_greeting']         = 'Ευχαριστούμε που επιλέξατε για τις αγορές σας το κατάστημα %s. Η παραγγελία σας έχει παραληφθεί και θα εκτελεστεί μόλις επιβεβαιωθεί η πληρωμή της.';]]></search>
+			<add><![CDATA[$_['text_new_greeting']         = 'Ευχαριστούμε που επιλέξατε για τις αγορές σας το κατάστημα %s. Η παραγγελία σας έχει παραληφθεί.';]]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/english/mail/" name="order.php" error="log">
+		<operation error="skip">
+			<search position="replace"><![CDATA[$_['text_new_greeting']         = 'Thank you for your interest in %s products. Your order has been received and will be processed once payment has been confirmed.';]]></search>
+			<add><![CDATA[$_['text_new_greeting']         = 'Thank you for your interest in %s products. Your order has been received.';]]></add>
+		</operation>
+	</file>
+</modification>
